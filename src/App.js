@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import * as C from './App.styles';
+import logoImage from './assets/devmemory_logo.png';
+import { Button } from './components/Button';
+import { InfoItem } from './components/InfoItem';
+import RestartIcon from './svgs/restart.svg';
+
+const App = () => {
+
+  const resetAndCreateGrid = () => {
+
+  }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <C.Container>
+      <C.Info>
+        <C.LogoLink href="">
+          <img src={logoImage} width='200' alt='' />
+        </C.LogoLink>
+
+        <C.InfoArea>
+          <InfoItem label='Tempo' value='00:00' />
+          <InfoItem label='Movimentos' value='0' />
+
+        </C.InfoArea>
+
+        <Button label='Reiniciar' icon={RestartIcon} onClick={resetAndCreateGrid} />
+      </C.Info>
+
+      <C.GridArea>
+        ............
+      </C.GridArea>
+
+
+    </C.Container>
   );
+
 }
 
 export default App;

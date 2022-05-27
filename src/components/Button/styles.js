@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const Container = styled.div`
+export const Container = styled.div `
 
 width: 200px;
 height: 50 px;
@@ -19,10 +19,10 @@ transition: all ease .3s;
      opacity: .8;
  }
 `
-    ;
+;
 
-
-export const IconArea = styled.div`
+// área do ícone
+export const IconArea = styled.div `
 //herda a altura do pai
 height: inherit;
 display: flex;
@@ -35,12 +35,14 @@ padding: 0 15px;
 `;
 
 
-export const Icon = styled.img`
+
+// tamanho do ícone
+export const Icon = styled.img `
 height: 20px;
 `;
 
 
-export const Label = styled.div`
+export const Label = styled.div `
 //altura da área do label herda do pai.
 height: inherit;
 color: #FFF;

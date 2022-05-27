@@ -9,34 +9,30 @@ display: flex;
 background-color: #1550ff;
 border-radius: 10px;
 cursor: pointer;
-//opacidade 100%
+
 opacity: 1;
 transition: all ease .3s;
 
-//quando passar o mouse vai para 80 por cento
-//no tempo de transition de 3 segundos.
  &:hover {
      opacity: .8;
  }
 `
 ;
 
-// área do ícone
+
 export const IconArea = styled.div `
-//herda a altura do pai
+
 height: inherit;
 display: flex;
-//centraliza o ícone que está dentro
+
 justify-content: center;
-//20% de branco
+
 border-right: 1 px solid rgba(255, 255, 255, .2)
 padding: 0 15px;
-// background-Color: red;
 `;
 
 
 
-// tamanho do ícone
 export const Icon = styled.img `
 height: 20px;
 `;

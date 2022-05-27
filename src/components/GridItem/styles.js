@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-//quais são as props que vai receber
-
 export const Container = styled.div`
-// a cor vai depender da props que está recebendo
 
 backgrond-color: ${props => props.showBackground ? '#1550FF' : '#E2E3E3'};
 height: 100px;
@@ -14,18 +11,6 @@ align-items: center;
 cursor: pointer;
 `;
 
-//opacity será opcional porque usa esse número de opacidade na imagem com opacidade em:
-// {item.permanentShown === false && item.shown === false && (
-//  <C.Icon src={b7Svg} alt="" opacity={.1}/>
-//   )}
-//e sem opacidade em:
-// {(item.permanentShown || item.shown)  &&  item.item != null &&
-// <C.Icon src={items[item.item].icon} alt="" />
-// }
-
-
-
-//recebe a opacidade
 export const Icon = styled.img `
 width: 40px;
 heght: 40px;

@@ -1,4 +1,3 @@
-
 export const formatTimeElapsed = (seconds) => {
     let minutes = Math.floor(seconds / 60);
     seconds = seconds - (minutes * 60);
